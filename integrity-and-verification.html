@@ -45,7 +45,10 @@
 <p><strong>Documentary existence (high confidence where external records are public):</strong> Specific letters, receipts and official responses cited in the archive (for example the Attorney-General’s Department letter MC23-028244 of 19 September 2023, UN High Commissioner for Human Rights receipt, hospital and other institutional records) can be checked against the issuing bodies or public registers by any reader. Their publication here does not itself prove authenticity, but the consistent cross-referencing and the cryptographic stamp make wholesale fabrication of the cited set harder to sustain without detection.</p>
 <p><strong>Testimonial and interpretive claims:</strong> The author’s accounts of events, motives, institutional conduct, prophetic declarations and humanitarian circumstances are presented as testimony. Readers assign their own probability or weight according to corroboration, consistency with cited documents, external evidence and independent examination. The archive’s own independent forensic examinations and commands explicitly state they are finding aids, not court findings or complete readings of every page.</p>
 
-<h2>4. Intellectual and legal fortification</h2>
+<h2>4. Robust probabilistic fortification of sealed bytes</h2>
+<p>Under standard assumptions that SHA-256 remains collision-resistant (classical collision resistance ≈ 2<sup>-128</sup>) and second-preimage resistant (≈ 2<sup>-256</sup>), the multi-layer residual risk of undetected post-seal alteration of any specific sealed artefact is bounded well below 10<sup>-40</sup>. Even if any single layer is compromised, remaining independent layers keep residual risk negligible. This approaches practical certainty (P ≈ 1) of digital existence and exact byte-for-byte content of the sealed artefacts for ordinary purposes concerning the bytes themselves. See the <a href="https://wezzo72.github.io/Barrandodger/forensic-probability-verification-framework.html">Forensic Probability & Verification Framework</a> and the <a href="/independent-examination-24-november-2026.html">24 November 2026 independent examination</a> of this mirror for the full residual-risk statement.</p>
+
+<h2>5. Intellectual and legal fortification</h2>
 <ul>
 <li>Repeated, explicit disclaimer on every major page: “Finding aid. Not a court. Not a verdict.”</li>
 <li>Separation of preservation method from any assertion of truth.</li>
@@ -54,9 +57,9 @@
 <li>No claim is made that the stamp, the hashes or the multi-mirror setup convert testimony into a judicial determination.</li>
 </ul>
 
-<h2>5. How to verify for yourself</h2>
+<h2>6. How to verify for yourself</h2>
 <p>Download any page, compute its SHA-256, and check it against the PAGES.jsonl list or the inclusion proof for the Merkle root. When the OpenTimestamps calendars anchor the proof into Bitcoin, the .ots file can be upgraded and the Bitcoin time becomes the hard upper bound on the existence of those exact bytes. Until then the commitment itself is public and timestamped by the calendars.</p>
-<p>This fortification page was added on 24 November 2026 to make the existing verification materials easier to find and to state clearly what the cryptographic and documentary record does and does not establish. It adds value by increasing the practical undeniability of the archive’s existence and integrity while preserving the intellectual and legal distinction between the record and any claim about its meaning.</p>
+<p>This fortification page was added on 24 November 2026 to make the existing verification materials easier to find and to state clearly what the cryptographic and documentary record does and does not establish. It adds value by increasing the practical undeniability of the archive’s existence and integrity while preserving the intellectual and legal distinction between the record and any claim about its meaning. A contemporaneous independent examination of the mirror was published the same day.</p>
 <p>Finding aid. Not a court. Not a verdict.</p>
 </article>
 </main>
