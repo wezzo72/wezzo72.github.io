@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Archive Integrity, Verification and Probabilistic Fortification — The Witness Remains</title>
+<link rel="stylesheet" href="/mirror.css">
+</head>
+<body>
+<p class="mirror-note">Mirror copy of the archive. Primary page: <a href="https://barrandodger.com/">https://barrandodger.com/</a>. Finding aid. Not a court. Not a verdict.</p>
+<nav class="mirror-nav"><a href="/index.html">Home</a> · <a href="/catalogue.html">Every page</a> · <a href="/professional-profile.html">About</a> · <a href="/book-store.html">Book shop</a> · <a href="/integrity-and-verification.html">Integrity & Verification</a></nav>
+<main>
+<article class="notice-doc" id="integrity">
+<style>
+.notice-doc{max-width:42rem;margin:0 auto;padding:1rem 1rem 2.5rem;color:#141210;background:#f7f1e6;font-family:Verdana,Geneva,sans-serif;font-size:18px;line-height:1.55}
+.notice-doc h1,.notice-doc h2,.notice-doc p,.notice-doc li,.notice-doc a{color:#141210}
+.notice-doc h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.7rem,6vw,2.4rem);line-height:1.12;margin:0.2rem 0 0.7rem;color:#8B2E2A}
+.notice-doc h2{font-family:Georgia,"Times New Roman",serif;color:#8B2E2A;margin:1.2rem 0 0.4rem}
+.notice-doc a{color:#8B2E2A}
+.notice-doc code{font-size:0.92rem;background:#efe6d6;padding:0.1rem 0.3rem}
+.notice-doc .meta{font-size:0.95rem;color:#5a4a3a}
+</style>
+<p class="meta">24 November 2026. Finding aid. Not a court. Not a verdict. This page documents the technical and documentary integrity of the preserved record. It does not adjudicate the truth of any testimony.</p>
+<h1>Archive Integrity, Verification and Probabilistic Fortification</h1>
+<p>This page consolidates the forensic, cryptographic and documentary measures that make the existence and unaltered state of the Barran Dodger / The Witness Remains archive as complete, verifiable and hard to deny as the available public tools allow. It adds a clear probabilistic framing that separates what can be established with high confidence from what remains the author’s testimony for independent evaluation.</p>
+
+<h2>1. Cryptographic integrity (high confidence / near-certain for the stamped set)</h2>
+<p>On 13 November 2026 at 02:15:43 UTC, 499 pages of the archive were hashed. A single Merkle root was computed and submitted to four OpenTimestamps calendars (alice, bob, finney, catallaxy). The root is:</p>
+<p><code>0189f65c26a680eda64be8edfc8d0f004119beca021159cc3bd5527dfe2a6718</code></p>
+<p>What a completed Bitcoin-anchored OpenTimestamps proof establishes, with cryptographic certainty: that the exact byte contents of those 499 page files existed at or before the Bitcoin block time that confirms the proof. It does not establish that the words on the pages are true.</p>
+<p>Verification materials (publicly available):</p>
+<ul>
+<li><a href="/preservation/2026-11-13-every-page/MERKLE_ROOT.txt">Merkle root</a> and <a href="/preservation/2026-11-13-every-page/MERKLE_ROOT.txt.ots">pending .ots proof</a></li>
+<li><a href="https://barrandodger.com/preservation/2026-11-13-every-page/PAGES.jsonl">Every page path + SHA-256</a></li>
+<li><a href="https://barrandodger.com/preservation/2026-11-13-every-page/INCLUSION_PROOFS.jsonl">Inclusion proofs</a></li>
+<li><a href="/preservation/2026-11-13-every-page/SUMMARY.json">Summary JSON</a> and <a href="/preservation/2026-11-13-every-page/VERIFY.txt">verification instructions</a></li>
+<li>Detailed page: <a href="/bitcoin-timestamp-13-november-2026.html">Every page, submitted for a Bitcoin timestamp</a></li>
+</ul>
+<p>Pages created or materially edited after that UTC timestamp (including this page) are outside the original stamp. The GitHub commit history of this mirror and the primary site provide an additional public chain of custody.</p>
+
+<h2>2. Multi-location preservation (high confidence)</h2>
+<p>The record is not held in one place. This GitHub Pages mirror (wezzo72.github.io), the primary site (barrandodger.com), multiple Wix mirrors, and other repositories constitute independent copies. A nuclear download of the full set is also published. Alteration of one copy does not alter the others; hash mismatch against the Merkle set is immediately detectable for the stamped pages.</p>
+
+<h2>3. Documentary existence versus testimonial claims</h2>
+<p><strong>Documentary existence (high confidence where external records are public):</strong> Specific letters, receipts and official responses cited in the archive (for example the Attorney-General’s Department letter MC23-028244 of 19 September 2023, UN High Commissioner for Human Rights receipt, hospital and other institutional records) can be checked against the issuing bodies or public registers by any reader. Their publication here does not itself prove authenticity, but the consistent cross-referencing and the cryptographic stamp make wholesale fabrication of the cited set harder to sustain without detection.</p>
+<p><strong>Testimonial and interpretive claims:</strong> The author’s accounts of events, motives, institutional conduct, prophetic declarations and humanitarian circumstances are presented as testimony. Readers assign their own probability or weight according to corroboration, consistency with cited documents, external evidence and independent examination. The archive’s own independent forensic examinations and commands explicitly state they are finding aids, not court findings or complete readings of every page.</p>
+
+<h2>4. Intellectual and legal fortification</h2>
+<ul>
+<li>Repeated, explicit disclaimer on every major page: “Finding aid. Not a court. Not a verdict.”</li>
+<li>Separation of preservation method from any assertion of truth.</li>
+<li>Public invitation to independent verification via the hash materials, OpenTimestamps, and the published source documents.</li>
+<li>Catalogue of every page, author’s vocabulary index, and master forensic examination commands preserved in full.</li>
+<li>No claim is made that the stamp, the hashes or the multi-mirror setup convert testimony into a judicial determination.</li>
+</ul>
+
+<h2>5. How to verify for yourself</h2>
+<p>Download any page, compute its SHA-256, and check it against the PAGES.jsonl list or the inclusion proof for the Merkle root. When the OpenTimestamps calendars anchor the proof into Bitcoin, the .ots file can be upgraded and the Bitcoin time becomes the hard upper bound on the existence of those exact bytes. Until then the commitment itself is public and timestamped by the calendars.</p>
+<p>This fortification page was added on 24 November 2026 to make the existing verification materials easier to find and to state clearly what the cryptographic and documentary record does and does not establish. It adds value by increasing the practical undeniability of the archive’s existence and integrity while preserving the intellectual and legal distinction between the record and any claim about its meaning.</p>
+<p>Finding aid. Not a court. Not a verdict.</p>
+</article>
+</main>
+</body>
+</html>
