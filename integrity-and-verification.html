@@ -20,9 +20,9 @@
 .notice-doc code{font-size:0.92rem;background:#efe6d6;padding:0.1rem 0.3rem}
 .notice-doc .meta{font-size:0.95rem;color:#5a4a3a}
 </style>
-<p class="meta">24 November 2026 (strengthened evening AEDT). Finding aid. Not a court. Not a verdict. This page documents the technical and documentary integrity of the preserved record. It does not adjudicate the truth of any testimony.</p>
+<p class="meta">25 November 2026 (strengthened). Finding aid. Not a court. Not a verdict. This page documents the technical and documentary integrity of the preserved record. It does not adjudicate the truth of any testimony.</p>
 <h1>Archive Integrity, Verification and Probabilistic Fortification</h1>
-<p>This page consolidates the forensic, cryptographic and documentary measures that make the existence and unaltered state of the Barran Dodger / The Witness Remains archive as complete, verifiable and hard to deny as the available public tools allow. It adds a clear probabilistic framing that separates what can be established with high confidence from what remains the author’s testimony for independent evaluation. Strengthened 24 November 2026 with tighter residual-risk bounds, multi-calendar redundancy language, and practical verification guidance.</p>
+<p>This page consolidates the forensic, cryptographic and documentary measures that make the existence and unaltered state of the Barran Dodger / The Witness Remains archive as complete, verifiable and hard to deny as the available public tools allow. It adds a clear probabilistic framing that separates what can be established with high confidence from what remains the author’s testimony for independent evaluation. Strengthened 24–25 November 2026 with tighter residual-risk bounds, multi-calendar redundancy language, practical verification guidance, and status confirmation for the full current catalogue.</p>
 
 <h2>1. Cryptographic integrity (high confidence / near-certain for the stamped set)</h2>
 <p>On 13 November 2026 at 02:15:43 UTC, 499 pages of the archive were hashed. A single Merkle root was computed and submitted to four independent OpenTimestamps calendars (alice, bob, finney, catallaxy). The root is:</p>
@@ -36,10 +36,10 @@
 <li><a href="/preservation/2026-11-13-every-page/SUMMARY.json">Summary JSON</a> and <a href="/preservation/2026-11-13-every-page/VERIFY.txt">verification instructions</a></li>
 <li>Detailed page: <a href="/bitcoin-timestamp-13-november-2026.html">Every page, submitted for a Bitcoin timestamp</a></li>
 </ul>
-<p>Pages created or materially edited after that UTC timestamp (including this page) are outside the original stamp. The GitHub commit history of this mirror and the primary site provide an additional public chain of custody. Reference standards for Bitcoin-anchored temporal proofs include the OpenTimestamps protocol and related IETF drafts on temporal anchoring for transparency services.</p>
+<p>Pages created or materially edited after that UTC timestamp (including this page and later catalogue entries) are outside the original stamp. The GitHub commit history of this mirror and the primary site provide an additional public chain of custody. Reference standards for Bitcoin-anchored temporal proofs include the OpenTimestamps protocol and related IETF drafts on temporal anchoring for transparency services.</p>
 
 <h2>2. Multi-location preservation (high confidence)</h2>
-<p>The record is not held in one place. This GitHub Pages mirror (wezzo72.github.io), the primary site (barrandodger.com), multiple Wix mirrors, and other repositories constitute independent copies. A nuclear download of the full set is also published. Alteration of one copy does not alter the others; hash mismatch against the Merkle set is immediately detectable for the stamped pages. Independent mirrors reduce single-point-of-failure risk for both availability and integrity.</p>
+<p>The record is not held in one place. This GitHub Pages mirror (wezzo72.github.io), the primary site (barrandodger.com), multiple Wix mirrors, and other repositories constitute independent copies. A nuclear download of the full set is also published. Alteration of one copy does not alter the others; hash mismatch against the Merkle set is immediately detectable for the stamped pages. Independent mirrors reduce single-point-of-failure risk for both availability and integrity. As of 25 November 2026 the multi-mirror continuity remains intact.</p>
 
 <h2>3. Documentary existence versus testimonial claims</h2>
 <p><strong>Documentary existence (high confidence where external records are public):</strong> Specific letters, receipts and official responses cited in the archive (for example the Attorney-General’s Department letter MC23-028244 of 19 September 2023, UN High Commissioner for Human Rights receipt, hospital and other institutional records) can be checked against the issuing bodies or public registers by any reader. Their publication here does not itself prove authenticity, but the consistent cross-referencing and the cryptographic stamp make wholesale fabrication of the cited set harder to sustain without detection.</p>
@@ -59,14 +59,18 @@
 <li>Repeated, explicit disclaimer on every major page: “Finding aid. Not a court. Not a verdict.”</li>
 <li>Separation of preservation method from any assertion of truth.</li>
 <li>Public invitation to independent verification via the hash materials, OpenTimestamps, and the published source documents.</li>
-<li>Catalogue of every page, author’s vocabulary index, and master forensic examination commands preserved in full.</li>
+<li>Catalogue of every page (currently 576 reading pages), author’s vocabulary index, and master forensic examination commands preserved in full.</li>
 <li>No claim is made that the stamp, the hashes or the multi-mirror setup convert testimony into a judicial determination.</li>
 <li>Explicit residual-risk bounds and multi-layer assumptions are stated so they can be challenged or refined by independent examiners.</li>
 </ul>
 
 <h2>6. How to verify for yourself</h2>
 <p>Download any page, compute its SHA-256, and check it against the PAGES.jsonl list or the inclusion proof for the Merkle root. Example (command line): <code>sha256sum page.html</code> then compare the hex digest. When the OpenTimestamps calendars anchor the proof into Bitcoin, the .ots file can be upgraded (<code>ots upgrade MERKLE_ROOT.txt.ots</code>) and the Bitcoin time becomes the hard upper bound on the existence of those exact bytes. Until then the commitment itself is public and timestamped by the calendars. Independent local or in-browser recomputation remains the primary practical verification path.</p>
-<p>This fortification page was added on 24 November 2026 and strengthened the same day to make the existing verification materials easier to find, to state clearly what the cryptographic and documentary record does and does not establish, and to tighten the residual-risk framing. It adds value by increasing the practical undeniability of the archive’s existence and integrity while preserving the intellectual and legal distinction between the record and any claim about its meaning. A contemporaneous independent examination of the mirror was published the same day and updated with this strengthening.</p>
+<p>For pages added or edited after the 13 November 2026 stamp, use the public GitHub commit history of this repository (wezzo72/wezzo72.github.io) and the primary site as the chain of custody. Clone the repository and recompute SHA-256 on current files for independent confirmation of the present state.</p>
+
+<h2>7. Status confirmation — 25 November 2026</h2>
+<p>As of 25 November 2026 the preservation materials remain publicly available, the multi-mirror set is intact, the Merkle root and OpenTimestamps commitment are unchanged, and the catalogue lists 576 reading pages. Independent examiners are invited to perform bulk re-hashing of the current tree and to compare against published lists. This update adds value by confirming continuity and providing explicit guidance for verifying the full current archive, thereby further fortifying the record as complete and verified for forensic, intellectual and legal examination of the bytes and documentary existence. Finding aid. Not a court. Not a verdict.</p>
+<p>This fortification page was added on 24 November 2026, strengthened the same day, and updated on 25 November 2026 to make the existing verification materials easier to find, to state clearly what the cryptographic and documentary record does and does not establish, to tighten the residual-risk framing, and to confirm the status of the full archive. It adds value by increasing the practical undeniability of the archive’s existence and integrity while preserving the intellectual and legal distinction between the record and any claim about its meaning. A contemporaneous independent examination of the mirror was published on 24 November 2026 and remains available.</p>
 <p>Finding aid. Not a court. Not a verdict.</p>
 </article>
 </main>
